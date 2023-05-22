@@ -1,9 +1,11 @@
 package GUI.Panels;
 
+import GUI.Standard.Panel_Standard;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class Panel_East extends JPanel {
+public class Panel_East extends Panel_Standard {
 
     public static JLabel SECOND_LABEL = new JLabel();
 

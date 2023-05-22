@@ -1,22 +1,22 @@
 package GUI.Panels;
 
-import javax.swing.*;
+import GUI.Standard.Button_Standard;
+import GUI.Standard.Panel_Standard;
+
 import java.awt.*;
 
-public class Panel_West extends JPanel {
+public class Panel_West extends Panel_Standard {
 
     public Panel_West(){
 
         setLayout(new FlowLayout());
 
-        JButton button = new JButton("Get First");
+        Button_Standard button = new Button_Standard("Get First");
         button.setName("first");
-        button.setFocusable(false);
         button.addActionListener(new Listener_Action(button.getName()));
 
-        JButton button2 = new JButton("Get second");
+        Button_Standard button2 = new Button_Standard("Get second");
         button2.setName("second");
-        button2.setFocusable(false);
         button2.addActionListener(new Listener_Action(button2.getName()));
 
         add(button);
