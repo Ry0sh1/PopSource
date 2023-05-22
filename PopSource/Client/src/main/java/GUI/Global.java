@@ -10,12 +10,10 @@ public class Global {
     public static Color LINES;
 
     public Global(){
-
         BACKGROUND_1 = new Color(40,40,40);
         BACKGROUND_2 = new Color(60, 60, 60);
         FOREGROUND = Color.white;
         LINES = Color.RED;
-
     }
 
 }

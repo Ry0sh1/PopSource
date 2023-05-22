@@ -8,7 +8,6 @@ import java.awt.*;
 public class Panel_West extends Panel_Standard {
 
     public Panel_West(){
-
         setLayout(new FlowLayout());
 
         Button_Standard button = new Button_Standard("Get First");
@@ -21,7 +20,6 @@ public class Panel_West extends Panel_Standard {
 
         add(button);
         add(button2);
-
     }
 
 }

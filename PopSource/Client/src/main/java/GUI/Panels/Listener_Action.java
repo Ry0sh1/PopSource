@@ -18,16 +18,12 @@ public class Listener_Action implements ActionListener {
     private String buttonName;
 
     public Listener_Action(String buttonName){
-
         this.buttonName = buttonName;
-
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
         try {
-
             Socket client = new Socket("localhost",8888);
 
             PrintWriter out = new PrintWriter(client.getOutputStream(),true);
@@ -35,25 +31,17 @@ public class Listener_Action implements ActionListener {
             BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
 
             if (buttonName.equals("first")) {
-
                 out.println("first");
-
             } else if (buttonName.equals("second")) {
-
                 out.println("second");
-
             }
 
             BufferedImage bufferedImage = ImageIO.read(bufferedInputStream);
             ImageIcon imageIcon = new ImageIcon(bufferedImage);
             Panel_East.SECOND_LABEL.setIcon(imageIcon);
-
         }catch (IOException i){
-
             System.out.println("Something went wrong");
-
         }
-
     }
 
 }
