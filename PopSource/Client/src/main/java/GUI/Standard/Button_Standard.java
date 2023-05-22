@@ -3,6 +3,7 @@ package GUI.Standard;
 import GUI.Global;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -18,6 +19,7 @@ public class Button_Standard extends JButton {
     }
 
     private void init(){
+        setPreferredSize(new Dimension(120,80));
         setBackground(Global.BACKGROUND_1);
         setForeground(Global.FOREGROUND);
         setBorder(BorderFactory.createLineBorder(Global.LINES,2));
